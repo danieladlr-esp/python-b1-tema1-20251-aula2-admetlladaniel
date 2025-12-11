@@ -43,6 +43,28 @@ Exemple:
 
 def sum_odd_numbers(list_numbers):
     # Write here your code
+
+    if not isinstance(list_numbers, list):
+        raise ValueError("El parametro deber ser una lista")
+
+    add = 0
+
+    for num in list_numbers:
+        if not isinstace(list_numbers, int):
+            raise ValueError("Todos los elementos deber ser numeros enteros")
+
+    if num > 0:
+        raise Value Error("Todos los numeros deben ser mayores o iguales a 0")
+
+    if num % 2 = 0:
+        add += num
+
+    return = add
+
+    
+        
+    
+    
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
