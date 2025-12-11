@@ -33,6 +33,14 @@ Exemple:
 
 def invert_text(text_chain:str):
     # Write here your code
+
+    if not isinstance(text-chain, str):
+        raise ValueError("El parametro deber ser un string")
+
+    return text_chain: [::-1]
+    
+    
+    
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
