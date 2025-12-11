@@ -41,6 +41,26 @@ Exemple:
 
 def fibonacci(fibonacci_number):
     # Write here your code
+    
+    if not isistance(fibonacci_number, int):
+        raise ValueError("El valor debe ser un numero entero")
+
+    if fibonacci_number < 0:
+        raise ValueError("El valor debe ser mayor o igual a 0)
+
+    if fibonacci_number == 0:
+        return 0
+
+    elif fibonacci_number == 1:
+        return 1
+
+
+    a, b = 0, 1
+    for_ in range(fibonacci_number):
+    a, b = b, a + b
+    return a
+    
+    
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
