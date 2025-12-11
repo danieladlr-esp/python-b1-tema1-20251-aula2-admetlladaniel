@@ -35,6 +35,23 @@ Exemple:
 
 def count_vowels(text_chain:str):
     # Write here your code
+    
+    if not isinstance(text_chain, str):
+        raise ValueError("El parametro debe ser un string")
+
+    vowels = "aeiouAEIOU"
+
+    count = 0
+
+    for character in text_chain:
+        if character in vowels:
+            count += 1
+
+    return count
+    
+        
+    
+    
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
