@@ -36,6 +36,21 @@ Exemple:
 
 def obtain_max(list_numbers):
     # Write here your code
+  
+    if not isinstance(list_numbers, list):
+        raise ValueError("El parametro debe ser una lista")
+
+    if not list_numbers:
+        raise ValueError("La lista no puede estar vacia")
+
+    for num in list_numbers:
+        if not ininstance(num, int):
+            raise ValueError("Todos los elementos deben ser numeros enteros)
+
+    return max(list_numbers)
+    
+    
+    
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
