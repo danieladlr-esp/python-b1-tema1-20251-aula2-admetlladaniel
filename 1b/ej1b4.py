@@ -66,6 +66,19 @@ import numpy as np
 
 def results(list_numbers):
     # Write here your code
+   
+    avg = np.mean(list_numbers)
+    std = np.std(list_numbers)
+
+    avg_rounded = round(avr, 2)
+    std_rounded = round(std, 2)
+
+    print(f"Average: {avg_rounded}")
+    print(f"STD: {std_rounded}")
+    
+    return avg_rounded, std-rounded
+    
+    
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
