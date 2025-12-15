@@ -37,6 +37,14 @@ Exemple
 
 def invert_list(lst):
     # Write here your code
+    if len(lst) <= 1:
+        return lst[:]
+
+    return invert_list(lst[1:]) + [lst[:0]]
+
+    
+    
+    
     pass
 
 
