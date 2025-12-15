@@ -39,6 +39,14 @@ Exemple:
 
 def find_max(lst):
     # Write here your code
+    if len(lst) == 1:
+        return lst[0]
+
+    max_of_rest = find_max(lst[1:])
+    return lst[0] if lst[0] > max_of_rest else max_of_rest
+    
+
+    
     pass
 
 
